@@ -24,6 +24,7 @@ class MySet:
         self.dictionary.clear()
         return self
 
-
-test_set = MySet([1, 2, 3, 4])
-ipdb.set_trace()
+    def __str__(self):
+        values = list(self.dictionary.keys())
+        values.sort()  # Sort the values for consistent output
+        return f"MySet: {{{','.join(map(str, values))}}}"
