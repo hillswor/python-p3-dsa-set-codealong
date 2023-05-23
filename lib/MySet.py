@@ -19,3 +19,11 @@ class MySet:
 
     def size(self):
         return len(self.dictionary)
+
+    def clear(self):
+        self.dictionary.clear()
+        return self
+
+
+test_set = MySet([1, 2, 3, 4])
+ipdb.set_trace()
